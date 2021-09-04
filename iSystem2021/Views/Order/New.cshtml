@@ -1,0 +1,1332 @@
+﻿
+@{
+    ViewBag.Title = "New";
+    Layout = "~/Views/Shared/_LayoutOrder.cshtml";
+}
+
+<section>
+    <div id="multple-step-form-n" class="container overflow-hidden" style="margin-top: 0px;margin-bottom: 10px;padding-bottom: 300px;padding-top: 10px;">
+        <div id="progress-bar-button" class="multisteps-form">
+            <div class="row" style="height: auto;">
+                <div class="col-12 col-lg-8 ml-auto mr-auto mb-4" style="width: 100%;">
+                    <div class="multisteps-form__progress" style="width: 100%;"><a class="btn multisteps-form__progress-btn js-active" role="button" title="User Info">Hàng hóa - Dịch vụ</a><a class="btn multisteps-form__progress-btn" role="button" title="User Info">Thông tin khách hàng</a><a class="btn multisteps-form__progress-btn" role="button" title="User Info">Thanh toán</a><a class="btn multisteps-form__progress-btn" role="button" title="User Info">Hoàn tất</a></div>
+                </div>
+            </div>
+        </div>
+        <div id="multistep-start-row" class="row">
+            <div id="multistep-start-column" class="col-12 col-lg-8 m-auto" style="width: 100%;">
+                <form id="main-form" class="multisteps-form__form">
+                    <div id="single-form-next" class="multisteps-form__panel shadow p-4 rounded bg-white js-active" data-animation="scaleIn">
+                        <h5 class="text-uppercase text-center multisteps-form__title" style="font-weight: bold;text-decoration:  underline;">Hàng hóa - Dịch vụ</h5>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="row" style="padding-bottom: 5px;">
+                                    <div class="col-4 text-end">
+                                        <h6>Danh mục:</h6>
+                                    </div>
+                                    <div class="col-8 text-end">
+                                        <select class="form-select">
+                                            <option value="undefined" selected="">Chọn danh mục...</option>
+                                            <option value="12">Bàn ăn</option>
+                                            <option value="13">Ghế ăn</option>
+                                            <option value="14">Sofa</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row" style="padding-bottom: 5px;">
+                                    <div class="col-4 text-end">
+                                        <h6>Nhóm sản phẩm:</h6>
+                                    </div>
+                                    <div class="col-8 text-end">
+                                        <select class="form-select">
+                                            <option value="undefined" selected="">Chọn danh mục...</option>
+                                            <option value="12">Bàn ăn</option>
+                                            <option value="13">Ghế ăn</option>
+                                            <option value="14">Sofa</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row" style="padding-bottom: 5px;">
+                                    <div class="col-4 text-end">
+                                        <h6>Tìm kiếm:</h6>
+                                    </div>
+                                    <div class="col-8 text-end"><input class="form-control" type="search" placeholder="Tìm kiếm sản phẩm..."></div>
+                                </div>
+                                <div class="row" style="padding-bottom: 5px;">
+                                    <div class="col-4 text-end">
+                                        <h6>Hình ảnh:</h6>
+                                    </div>
+                                    <div class="col-8 text-end">
+                                        <picture><img src="assets/img/sofa0101.jpg" style="width: 60%;margin-right: 20%;margin-left: 20%;"></picture>
+                                    </div>
+                                </div>
+                                <div class="row" style="padding-bottom: 5px;">
+                                    <div class="col-4 text-end">
+                                        <h6>Vật liệu:</h6>
+                                    </div>
+                                    <div class="col-8 text-end">
+                                        <select class="form-select">
+                                            <option value="undefined" selected="">Chọn vật liệu...</option>
+                                            <option value="12">Bàn ăn</option>
+                                            <option value="13">Ghế ăn</option>
+                                            <option value="14">Sofa</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row" style="padding-bottom: 5px;">
+                                    <div class="col-4 text-end">
+                                        <h6>Màu sắc:</h6>
+                                    </div>
+                                    <div class="col-8 text-end">
+                                        <select class="form-select">
+                                            <option value="undefined" selected="">Màu sắc...</option>
+                                            <option value="12">Bàn ăn</option>
+                                            <option value="13">Ghế ăn</option>
+                                            <option value="14">Sofa</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row" style="padding-bottom: 5px;">
+                                    <div class="col-3 text-end">
+                                        <h6>Kích thước:</h6>
+                                    </div>
+                                    <div class="col-3 text-end"><input class="form-control" type="number" placeholder="Rộng"></div>
+                                    <div class="col-3 text-end"><input class="form-control" type="number" placeholder="Sâu"></div>
+                                    <div class="col-3 text-end"><input class="form-control" type="number" placeholder="Cao"></div>
+                                </div>
+                                <div class="row" style="padding-bottom: 5px;">
+                                    <div class="col-3 text-end">
+                                        <h6>Ghi chú:</h6>
+                                    </div>
+                                    <div class="col-9 text-end"><textarea class="form-control" placeholder="Nếu có ghi chú đặc thù cho sản phẩm, nhập vào đây"></textarea></div>
+                                </div>
+                                <div class="row" style="padding-bottom: 5px;">
+                                    <div class="col-12 text-end"><button class="btn btn-primary" type="button" style="width: 100%;" data-bs-target="#modal-1" data-bs-toggle="modal">Thêm Mới</button></div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="row">
+                                    <div class="col-2 align-self-center">
+                                        <h6 style="font-weight: bold;">ID</h6>
+                                    </div>
+                                    <div class="col-7 align-self-center">
+                                        <h5 style="font-weight: bold;">Sản phẩm</h5>
+                                    </div>
+                                    <div class="col-2">
+                                        <h5 style="font-weight: bold;">Tồn</h5>
+                                    </div>
+                                    <div class="col-1"></div>
+                                </div>
+                                <hr style="margin-top: 5px;margin-bottom: 5px;">
+                                <div class="row justify-content-center align-items-center align-content-center align-self-center">
+                                    <div class="col-2 align-self-center">
+                                        <p style="margin-bottom: 0px;">103</p>
+                                    </div>
+                                    <div class="col-7 justify-content-center align-items-center align-content-center align-self-center">
+                                        <p style="margin-bottom: 0px;">CLIMBING Vải Huy Hoàng ASTON 23 KD1069 - 2000 x 1800 x 600</p>
+                                    </div>
+                                    <div class="col-2 justify-content-center align-items-center align-content-center align-self-center">
+                                        <p style="margin-bottom: 0px;">6</p>
+                                    </div>
+                                    <div class="col-1 text-end">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none">
+                                            <path d="M11.0001 1H13.0001V15.4853L16.2428 12.2427L17.657 13.6569L12.0001 19.3137L6.34326 13.6569L7.75748 12.2427L11.0001 15.4853V1Z" fill="currentColor"></path>
+                                            <path d="M18 20.2877H6V22.2877H18V20.2877Z" fill="currentColor"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <hr style="margin-top: 5px;margin-bottom: 5px;">
+                                <div class="row justify-content-center align-items-center align-content-center align-self-center">
+                                    <div class="col-2 align-self-center">
+                                        <p style="margin-bottom: 0px;">103</p>
+                                    </div>
+                                    <div class="col-7 justify-content-center align-items-center align-content-center align-self-center">
+                                        <p style="margin-bottom: 0px;">CLIMBING Vải Huy Hoàng ASTON 23 KD1069 - 2000 x 1800 x 600</p>
+                                    </div>
+                                    <div class="col-2 justify-content-center align-items-center align-content-center align-self-center">
+                                        <p style="margin-bottom: 0px;">6</p>
+                                    </div>
+                                    <div class="col-1 text-end">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none">
+                                            <path d="M11.0001 1H13.0001V15.4853L16.2428 12.2427L17.657 13.6569L12.0001 19.3137L6.34326 13.6569L7.75748 12.2427L11.0001 15.4853V1Z" fill="currentColor"></path>
+                                            <path d="M18 20.2877H6V22.2877H18V20.2877Z" fill="currentColor"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <hr style="margin-top: 5px;margin-bottom: 5px;">
+                                <div class="row justify-content-center align-items-center align-content-center align-self-center">
+                                    <div class="col-2 align-self-center">
+                                        <p style="margin-bottom: 0px;">103</p>
+                                    </div>
+                                    <div class="col-7 justify-content-center align-items-center align-content-center align-self-center">
+                                        <p style="margin-bottom: 0px;">CLIMBING Vải Huy Hoàng ASTON 23 KD1069 - 2000 x 1800 x 600</p>
+                                    </div>
+                                    <div class="col-2 justify-content-center align-items-center align-content-center align-self-center">
+                                        <p style="margin-bottom: 0px;">6</p>
+                                    </div>
+                                    <div class="col-1 text-end">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none">
+                                            <path d="M11.0001 1H13.0001V15.4853L16.2428 12.2427L17.657 13.6569L12.0001 19.3137L6.34326 13.6569L7.75748 12.2427L11.0001 15.4853V1Z" fill="currentColor"></path>
+                                            <path d="M18 20.2877H6V22.2877H18V20.2877Z" fill="currentColor"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <hr style="margin-top: 5px;margin-bottom: 5px;">
+                                <div class="row justify-content-center align-items-center align-content-center align-self-center">
+                                    <div class="col-2 align-self-center">
+                                        <p style="margin-bottom: 0px;">103</p>
+                                    </div>
+                                    <div class="col-7 justify-content-center align-items-center align-content-center align-self-center">
+                                        <p style="margin-bottom: 0px;">CLIMBING Vải Huy Hoàng ASTON 23 KD1069 - 2000 x 1800 x 600</p>
+                                    </div>
+                                    <div class="col-2 justify-content-center align-items-center align-content-center align-self-center">
+                                        <p style="margin-bottom: 0px;">6</p>
+                                    </div>
+                                    <div class="col-1 text-end">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none">
+                                            <path d="M11.0001 1H13.0001V15.4853L16.2428 12.2427L17.657 13.6569L12.0001 19.3137L6.34326 13.6569L7.75748 12.2427L11.0001 15.4853V1Z" fill="currentColor"></path>
+                                            <path d="M18 20.2877H6V22.2877H18V20.2877Z" fill="currentColor"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <hr style="margin-top: 5px;margin-bottom: 5px;">
+                                <div class="row justify-content-center align-items-center align-content-center align-self-center">
+                                    <div class="col-2 align-self-center">
+                                        <p style="margin-bottom: 0px;">103</p>
+                                    </div>
+                                    <div class="col-7 justify-content-center align-items-center align-content-center align-self-center">
+                                        <p style="margin-bottom: 0px;">CLIMBING Vải Huy Hoàng ASTON 23 KD1069 - 2000 x 1800 x 600</p>
+                                    </div>
+                                    <div class="col-2 justify-content-center align-items-center align-content-center align-self-center">
+                                        <p style="margin-bottom: 0px;">6</p>
+                                    </div>
+                                    <div class="col-1 text-end">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none">
+                                            <path d="M11.0001 1H13.0001V15.4853L16.2428 12.2427L17.657 13.6569L12.0001 19.3137L6.34326 13.6569L7.75748 12.2427L11.0001 15.4853V1Z" fill="currentColor"></path>
+                                            <path d="M18 20.2877H6V22.2877H18V20.2877Z" fill="currentColor"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <hr style="margin-top: 5px;margin-bottom: 5px;">
+                                <div class="row justify-content-center align-items-center align-content-center align-self-center">
+                                    <div class="col-2 align-self-center">
+                                        <p style="margin-bottom: 0px;">103</p>
+                                    </div>
+                                    <div class="col-7 justify-content-center align-items-center align-content-center align-self-center">
+                                        <p style="margin-bottom: 0px;">CLIMBING Vải Huy Hoàng ASTON 23 KD1069 - 2000 x 1800 x 600</p>
+                                    </div>
+                                    <div class="col-2 justify-content-center align-items-center align-content-center align-self-center">
+                                        <p style="margin-bottom: 0px;">6</p>
+                                    </div>
+                                    <div class="col-1 text-end">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none">
+                                            <path d="M11.0001 1H13.0001V15.4853L16.2428 12.2427L17.657 13.6569L12.0001 19.3137L6.34326 13.6569L7.75748 12.2427L11.0001 15.4853V1Z" fill="currentColor"></path>
+                                            <path d="M18 20.2877H6V22.2877H18V20.2877Z" fill="currentColor"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <hr style="margin-top: 5px;margin-bottom: 5px;">
+                                <div class="row justify-content-center align-items-center align-content-center align-self-center">
+                                    <div class="col-2 align-self-center">
+                                        <p style="margin-bottom: 0px;">103</p>
+                                    </div>
+                                    <div class="col-7 justify-content-center align-items-center align-content-center align-self-center">
+                                        <p style="margin-bottom: 0px;">CLIMBING Vải Huy Hoàng ASTON 23 KD1069 - 2000 x 1800 x 600</p>
+                                    </div>
+                                    <div class="col-2 justify-content-center align-items-center align-content-center align-self-center">
+                                        <p style="margin-bottom: 0px;">6</p>
+                                    </div>
+                                    <div class="col-1 text-end">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none">
+                                            <path d="M11.0001 1H13.0001V15.4853L16.2428 12.2427L17.657 13.6569L12.0001 19.3137L6.34326 13.6569L7.75748 12.2427L11.0001 15.4853V1Z" fill="currentColor"></path>
+                                            <path d="M18 20.2877H6V22.2877H18V20.2877Z" fill="currentColor"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <hr style="margin-top: 5px;margin-bottom: 5px;">
+                                <div class="row justify-content-center align-items-center align-content-center align-self-center">
+                                    <div class="col-2 align-self-center">
+                                        <p style="margin-bottom: 0px;">103</p>
+                                    </div>
+                                    <div class="col-7 justify-content-center align-items-center align-content-center align-self-center">
+                                        <p style="margin-bottom: 0px;">CLIMBING Vải Huy Hoàng ASTON 23 KD1069 - 2000 x 1800 x 600</p>
+                                    </div>
+                                    <div class="col-2 justify-content-center align-items-center align-content-center align-self-center">
+                                        <p style="margin-bottom: 0px;">6</p>
+                                    </div>
+                                    <div class="col-1 text-end">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none">
+                                            <path d="M11.0001 1H13.0001V15.4853L16.2428 12.2427L17.657 13.6569L12.0001 19.3137L6.34326 13.6569L7.75748 12.2427L11.0001 15.4853V1Z" fill="currentColor"></path>
+                                            <path d="M18 20.2877H6V22.2877H18V20.2877Z" fill="currentColor"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <hr style="margin-top: 5px;margin-bottom: 5px;">
+                            </div>
+                        </div>
+                        <hr>
+                        <div id="form-content" class="multisteps-form__content">
+                            <div id="input-grp-single" class="form-row mt-4">
+                                <div class="shopping-cart">
+                                    <div class="px-4 px-lg-0">
+
+                                        <div class="pb-5">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-lg-12 p-5 bg-white rounded shadow-sm mb-5">
+
+                                                        <!-- Shopping cart table -->
+                                                        <div class="table-responsive">
+                                                            <table class="table">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th scope="col" class="border-0 bg-light">
+                                                                            <div class="p-2 px-3 text-uppercase">Sản phẩm</div>
+                                                                        </th>
+                                                                        <th scope="col" class="border-0 bg-light">
+                                                                            <div class="p-2 px-3 text-uppercase">Mô tả</div>
+                                                                        </th>
+                                                                        <th scope="col" class="border-0 bg-light">
+                                                                            <div class="py-2 text-uppercase">Đơn giá</div>
+                                                                        </th>
+                                                                        <th scope="col" class="border-0 bg-light col-1">
+                                                                            <div class="py-2 text-uppercase">SL</div>
+                                                                        </th>
+                                                                        <th scope="col" class="border-0 bg-light">
+                                                                            <div class="py-2 text-uppercase">Chiết khấu</div>
+                                                                        </th>
+                                                                        <th scope="col" class="border-0 bg-light">
+                                                                            <div class="py-2 text-uppercase"></div>
+                                                                        </th>
+                                                                        <th scope="col" class="border-0 bg-light col-1">
+                                                                            <div class="py-2 text-uppercase">Thuế</div>
+                                                                        </th>
+                                                                        <th scope="col" class="border-0 bg-light">
+                                                                            <div class="py-2 text-uppercase">Xóa</div>
+                                                                        </th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <th scope="row" class="border-0">
+                                                                            <div class="p-2">
+                                                                                <img src="assets/img/sofa0101.jpg" alt="" width="70" class="img-fluid rounded shadow-sm">
+                                                                                <div class="ml-3 d-inline-block align-middle">
+                                                                                    <h6 class="mb-0"> <a href="#" class="text-dark d-inline-block align-middle">Sofa giường CLIMBING</a></h6><span class="text-muted font-weight-normal font-italic d-block">Danh mục: Sofa</span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </th>
+                                                                        <td class="border-0 align-middle"><strong>Chất liệu: vải Huy Hoàng. <br>Màu sắc: Xanh ngọc.<br>Trụ tay: Inox 304.<br>Chân: Thép không gỉ sơn tỉnh điện màu đen</strong></td>
+                                                                        <td class="border-0 align-middle"><input type="text" value="5.650.000" class="form-control" /></td>
+                                                                        <td class="border-0 align-middle"><input type="number" value="3" class="form-control" /></td>
+                                                                        <td class="border-0 align-middle"><input type="number" value="3" class="form-control" /></td>
+                                                                        <td class="border-0 align-middle"><select class="form-control"><option>%</option><option>VND</option></select></td>
+                                                                        <td class="border-0 align-middle"><input type="number" value="10" class="form-control" /></td>
+                                                                        <td class="border-0 align-middle"><a href="#" class="text-dark"><i class="fa fa-trash"></i></a><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><a href="#" class="text-dark"><i class="fa fa-pencil"></i></a></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row" class="border-0">
+                                                                            <div class="p-2">
+                                                                                <img src="assets/img/sofa0101.jpg" alt="" width="70" class="img-fluid rounded shadow-sm">
+                                                                                <div class="ml-3 d-inline-block align-middle">
+                                                                                    <h6 class="mb-0"> <a href="#" class="text-dark d-inline-block align-middle">Sofa giường CLIMBING</a></h6><span class="text-muted font-weight-normal font-italic d-block">Danh mục: Sofa</span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </th>
+                                                                        <td class="border-0 align-middle"><strong>Chất liệu: vải Huy Hoàng. <br>Màu sắc: Xanh ngọc.<br>Trụ tay: Inox 304.<br>Chân: Thép không gỉ sơn tỉnh điện màu đen</strong></td>
+                                                                        <td class="border-0 align-middle"><input type="text" value="5.650.000" class="form-control" /></td>
+                                                                        <td class="border-0 align-middle"><input type="number" value="3" class="form-control" /></td>
+                                                                        <td class="border-0 align-middle"><input type="number" value="3" class="form-control" /></td>
+                                                                        <td class="border-0 align-middle"><select class="form-control"><option>%</option><option>VND</option></select></td>
+                                                                        <td class="border-0 align-middle"><input type="number" value="10" class="form-control" /></td>
+                                                                        <td class="border-0 align-middle"><a href="#" class="text-dark"><i class="fa fa-trash"></i></a><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><a href="#" class="text-dark"><i class="fa fa-pencil"></i></a></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row" class="border-0">
+                                                                            <div class="p-2">
+                                                                                <img src="assets/img/sofa0101.jpg" alt="" width="70" class="img-fluid rounded shadow-sm">
+                                                                                <div class="ml-3 d-inline-block align-middle">
+                                                                                    <h6 class="mb-0"> <a href="#" class="text-dark d-inline-block align-middle">Sofa giường CLIMBING</a></h6><span class="text-muted font-weight-normal font-italic d-block">Danh mục: Sofa</span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </th>
+                                                                        <td class="border-0 align-middle"><strong>Chất liệu: vải Huy Hoàng. <br>Màu sắc: Xanh ngọc.<br>Trụ tay: Inox 304.<br>Chân: Thép không gỉ sơn tỉnh điện màu đen</strong></td>
+                                                                        <td class="border-0 align-middle"><input type="text" value="5.650.000" class="form-control" /></td>
+                                                                        <td class="border-0 align-middle"><input type="number" value="3" class="form-control" /></td>
+                                                                        <td class="border-0 align-middle"><input type="number" value="3" class="form-control" /></td>
+                                                                        <td class="border-0 align-middle"><select class="form-control"><option>%</option><option>VND</option></select></td>
+                                                                        <td class="border-0 align-middle"><input type="number" value="10" class="form-control" /></td>
+                                                                        <td class="border-0 align-middle"><a href="#" class="text-dark"><i class="fa fa-trash"></i></a><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><a href="#" class="text-dark"><i class="fa fa-pencil"></i></a></td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                        <!-- End -->
+                                                    </div>
+                                                </div>
+
+                                                <div class="row py-5 p-4 bg-white rounded shadow-sm text-center">
+                                                    <div class="col-lg-6">
+                                                        <div class="bg-light rounded-pill px-4 py-3 text-uppercase font-weight-bold">Tóm tắt </div>
+                                                        <div class="p-4">
+                                                            <p class="font-italic mb-4">Chiết khấu và thuế dựa trên thông tin bạn đã nhập.</p>
+                                                            <ul class="list-unstyled mb-4">
+                                                                <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Đơn hàng</strong><strong>15.000.000</strong></li>
+                                                                <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Chiết khấu</strong><strong>500.000</strong></li>
+                                                                <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Thuế</strong><strong>1.500.000</strong></li>
+                                                                <li class="d-flex justify-content-between py-3 border-bottom">
+                                                                    <strong class="text-muted">Thanh toán</strong>
+                                                                    <h5 class="font-weight-bold">16.000.000</h5>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="next-button" class="button-row d-flex mt-4"><button class="btn btn btn-primary ml-auto js-btn-next" type="button" title="Next">Tiếp theo</button></div>
+                        </div>
+                    </div>
+                    <div id="single-form-next-prev" class="multisteps-form__panel shadow p-4 rounded bg-white" data-animation="scaleIn">
+                        <h5 class="text-uppercase text-center multisteps-form__title" style="font-weight: bold;text-decoration:  underline;">Thông tin khách hàng</h5>
+                        <div id="form-content-1" class="multisteps-form__content">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="row" style="margin-bottom: 5px;">
+                                            <div class="col-4 text-end">
+                                                <p style="margin-bottom: 0px;">Tìm kiếm</p>
+                                            </div>
+                                            <div class="col-7"><input class="form-control" type="search"></div>
+                                            <div class="col-1 text-center" style="padding-right: 0px;padding-left: 0px;"><a href="#" data-bs-target="#modal-2" data-bs-toggle="modal"><i class="icon ion-android-add" style="font-weight: bold;font-size: 25px;"></i></a></div>
+                                        </div>
+                                        <div class="row" style="margin-bottom: 5px;">
+                                            <div class="col-4 text-end justify-content-center align-items-center align-content-center align-self-center">
+                                                <p style="margin-bottom: 0px;">Đặt hàng</p>
+                                            </div>
+                                            <div class="col-7">
+                                                <select class="form-select">
+                                                    <option value="undefined" selected="">Chọn liên hệ...</option>
+                                                    <option value="12">This is item 1</option>
+                                                    <option value="13">This is item 2</option>
+                                                    <option value="14">This is item 3</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-1 text-center" style="padding-right: 0px;padding-left: 0px;"><a href="#" data-bs-target="#modal-3" data-bs-toggle="modal"><i class="icon ion-android-add" style="font-weight: bold;font-size: 25px;"></i></a></div>
+                                        </div>
+                                        <div class="row" style="margin-bottom: 5px;">
+                                            <div class="col-4 text-end justify-content-center align-items-center align-content-center align-self-center">
+                                                <p style="margin-bottom: 0px;">Nhận hàng</p>
+                                            </div>
+                                            <div class="col-7">
+                                                <select class="form-select">
+                                                    <option value="undefined" selected="">Chọn liên hệ...</option>
+                                                    <option value="12">This is item 1</option>
+                                                    <option value="13">This is item 2</option>
+                                                    <option value="14">This is item 3</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-1 text-center" style="padding-right: 0px;padding-left: 0px;"><a href="#" data-bs-target="#modal-3" data-bs-toggle="modal"><i class="icon ion-android-add" style="font-weight: bold;font-size: 25px;"></i></a></div>
+                                        </div>
+                                        <div class="row" style="margin-bottom: 5px;">
+                                            <div class="col-4 text-end justify-content-center align-items-center align-content-center align-self-center">
+                                                <p style="margin-bottom: 0px;">Giao hàng</p>
+                                            </div>
+                                            <div class="col-8">
+                                                <select class="form-select">
+                                                    <option value="undefined" selected="">Mặc đinh</option>
+                                                    <option value="12">Người đặt</option>
+                                                    <option value="13">Người nhận</option>
+                                                    <option value="14">Tùy chỉnh</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row" style="margin-bottom: 5px;">
+                                            <div class="col-4 text-end justify-content-center align-items-center align-content-center align-self-center">
+                                                <p style="margin-bottom: 0px;">Địa chỉ</p>
+                                            </div>
+                                            <div class="col-8"><textarea class="form-control" placeholder="Địa chỉ giao hàng"></textarea></div>
+                                        </div>
+                                        <div class="row" style="margin-bottom: 5px;">
+                                            <div class="col-4 text-end justify-content-center align-items-center align-content-center align-self-center">
+                                                <p style="margin-bottom: 0px;">Phường/Xã</p>
+                                            </div>
+                                            <div class="col-8">
+                                                <select class="form-select">
+                                                    <option value="undefined" selected="">Chọn phường xã...</option>
+                                                    <option value="12">Người đặt</option>
+                                                    <option value="13">Người nhận</option>
+                                                    <option value="14">Tùy chỉnh</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row" style="margin-bottom: 5px;">
+                                            <div class="col-4 text-end justify-content-center align-items-center align-content-center align-self-center">
+                                                <p style="margin-bottom: 0px;">Quận/Huyện</p>
+                                            </div>
+                                            <div class="col-8">
+                                                <select class="form-select">
+                                                    <option value="undefined" selected="">Chọn quận huyện...</option>
+                                                    <option value="12">Người đặt</option>
+                                                    <option value="13">Người nhận</option>
+                                                    <option value="14">Tùy chỉnh</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row" style="margin-bottom: 5px;">
+                                            <div class="col-4 text-end justify-content-center align-items-center align-content-center align-self-center">
+                                                <p style="margin-bottom: 0px;">Tỉnh/Thành phố</p>
+                                            </div>
+                                            <div class="col-8">
+                                                <select class="form-select">
+                                                    <option value="undefined" selected="">Chọn tỉnh thành phố...</option>
+                                                    <option value="12">Người đặt</option>
+                                                    <option value="13">Người nhận</option>
+                                                    <option value="14">Tùy chỉnh</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row" style="margin-bottom: 5px;">
+                                            <div class="col-4 text-end justify-content-center align-items-center align-content-center align-self-center">
+                                                <p style="margin-bottom: 0px;">Ghi chú</p>
+                                            </div>
+                                            <div class="col-8"><textarea class="form-control" placeholder="Nếu có ghi chú hoặc hướng dẫn giao hàng bạn hãy nhập ở đây."></textarea></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <div class="col text-center" style="padding-top: 12px;padding-bottom: 12px;border-radius: 12;background: rgba(249,249,254,0.88);box-shadow: 3px 3px rgba(133,135,150,0.26);border-width: 1px;border-style: none;transform: perspective(0px);">
+                                                <h5 class="text-uppercase" style="font-weight: bold;margin-bottom: 0px;">danh sách khách hàng</h5>
+                                            </div>
+                                        </div>
+                                        <div class="row justify-content-center align-items-center align-content-center align-self-center" style="padding-top: 6px;padding-bottom: 6px;">
+                                            <div class="col-4">
+                                                <p style="margin-bottom: 0px;">0968304051</p>
+                                            </div>
+                                            <div class="col-7">
+                                                <p style="margin-bottom: 0px;">Sự đẹp trai - Pro vip</p>
+                                            </div>
+                                            <div class="col-1"><i class="fa fa-arrow-left"></i></div>
+                                        </div>
+                                        <div class="row justify-content-center align-items-center align-content-center align-self-center" style="padding-top: 6px;padding-bottom: 6px;">
+                                            <div class="col-4">
+                                                <p style="margin-bottom: 0px;">0968304051</p>
+                                            </div>
+                                            <div class="col-7">
+                                                <p style="margin-bottom: 0px;">Sự đẹp trai - Pro vip</p>
+                                            </div>
+                                            <div class="col-1"><i class="fa fa-arrow-left"></i></div>
+                                        </div>
+                                        <div class="row justify-content-center align-items-center align-content-center align-self-center" style="padding-top: 6px;padding-bottom: 6px;">
+                                            <div class="col-4">
+                                                <p style="margin-bottom: 0px;">0968304051</p>
+                                            </div>
+                                            <div class="col-7">
+                                                <p style="margin-bottom: 0px;">Sự đẹp trai - Pro vip</p>
+                                            </div>
+                                            <div class="col-1"><i class="fa fa-arrow-left"></i></div>
+                                        </div>
+                                        <div class="row justify-content-center align-items-center align-content-center align-self-center" style="padding-top: 6px;padding-bottom: 6px;">
+                                            <div class="col-4">
+                                                <p style="margin-bottom: 0px;">0968304051</p>
+                                            </div>
+                                            <div class="col-7">
+                                                <p style="margin-bottom: 0px;">Sự đẹp trai - Pro vip</p>
+                                            </div>
+                                            <div class="col-1"><i class="fa fa-arrow-left"></i></div>
+                                        </div>
+                                        <div class="row justify-content-center align-items-center align-content-center align-self-center" style="padding-top: 6px;padding-bottom: 6px;">
+                                            <div class="col-4">
+                                                <p style="margin-bottom: 0px;">0968304051</p>
+                                            </div>
+                                            <div class="col-7">
+                                                <p style="margin-bottom: 0px;">Sự đẹp trai - Pro vip</p>
+                                            </div>
+                                            <div class="col-1"><i class="fa fa-arrow-left"></i></div>
+                                        </div>
+                                        <div class="row justify-content-center align-items-center align-content-center align-self-center" style="padding-top: 6px;padding-bottom: 6px;">
+                                            <div class="col-4">
+                                                <p style="margin-bottom: 0px;">0968304051</p>
+                                            </div>
+                                            <div class="col-7">
+                                                <p style="margin-bottom: 0px;">Sự đẹp trai - Pro vip</p>
+                                            </div>
+                                            <div class="col-1"><i class="fa fa-arrow-left"></i></div>
+                                        </div>
+                                        <div class="row justify-content-center align-items-center align-content-center align-self-center" style="padding-top: 6px;padding-bottom: 6px;">
+                                            <div class="col-4">
+                                                <p style="margin-bottom: 0px;">0968304051</p>
+                                            </div>
+                                            <div class="col-7">
+                                                <p style="margin-bottom: 0px;">Sự đẹp trai - Pro vip</p>
+                                            </div>
+                                            <div class="col-1"><i class="fa fa-arrow-left"></i></div>
+                                        </div>
+                                        <div class="row justify-content-center align-items-center align-content-center align-self-center" style="padding-top: 6px;padding-bottom: 6px;">
+                                            <div class="col-4">
+                                                <p style="margin-bottom: 0px;">0968304051</p>
+                                            </div>
+                                            <div class="col-7">
+                                                <p style="margin-bottom: 0px;">Sự đẹp trai - Pro vip</p>
+                                            </div>
+                                            <div class="col-1"><i class="fa fa-arrow-left"></i></div>
+                                        </div>
+                                        <div class="row justify-content-center align-items-center align-content-center align-self-center" style="padding-top: 6px;padding-bottom: 6px;">
+                                            <div class="col-4">
+                                                <p style="margin-bottom: 0px;">0968304051</p>
+                                            </div>
+                                            <div class="col-7">
+                                                <p style="margin-bottom: 0px;">Sự đẹp trai - Pro vip</p>
+                                            </div>
+                                            <div class="col-1"><i class="fa fa-arrow-left"></i></div>
+                                        </div>
+                                        <div class="row justify-content-center align-items-center align-content-center align-self-center" style="padding-top: 6px;padding-bottom: 6px;">
+                                            <div class="col-4">
+                                                <p style="margin-bottom: 0px;">0968304051</p>
+                                            </div>
+                                            <div class="col-7">
+                                                <p style="margin-bottom: 0px;">Sự đẹp trai - Pro vip</p>
+                                            </div>
+                                            <div class="col-1"><i class="fa fa-arrow-left"></i></div>
+                                        </div>
+                                        <div class="row justify-content-center align-items-center align-content-center align-self-center" style="padding-top: 6px;padding-bottom: 6px;">
+                                            <div class="col-4">
+                                                <p style="margin-bottom: 0px;">0968304051</p>
+                                            </div>
+                                            <div class="col-7">
+                                                <p style="margin-bottom: 0px;">Sự đẹp trai - Pro vip</p>
+                                            </div>
+                                            <div class="col-1"><i class="fa fa-arrow-left"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="next-prev-buttons" class="button-row d-flex mt-4"><button class="btn btn btn-primary js-btn-prev" type="button" title="Prev" style="margin-right: 5px;">Quay lại</button><button class="btn btn btn-primary ml-auto js-btn-next" type="button" title="Next">Tiếp theo</button></div>
+                        </div>
+                    </div>
+                    <div id="single-form-next-prev-1" class="multisteps-form__panel shadow p-4 rounded bg-white" data-animation="scaleIn">
+                        <h5 class="text-uppercase text-center multisteps-form__title" style="font-weight: bold;text-decoration:  underline;">Thanh toán</h5>
+                        <div id="form-content-2" class="multisteps-form__content">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="row" style="margin-bottom: 5px;">
+                                            <div class="col">
+                                                <div class="form-check"><input class="form-check-input" type="radio" id="formCheck-1" name="PayType"><label class="form-check-label" for="formCheck-1">Tiền mặt</label></div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="form-check"><input class="form-check-input" type="radio" id="formCheck-1" name="PayType"><label class="form-check-label" for="formCheck-1">Chuyển khoản</label></div>
+                                            </div>
+                                        </div>
+                                        <div class="row" style="margin-bottom: 5px;">
+                                            <div class="col-3 justify-content-center align-items-center align-content-center align-self-center" style="text-align: right;">
+                                                <p style="margin-bottom: 0px;">Cọc trước</p>
+                                            </div>
+                                            <div class="col-6"><input class="form-control" type="number"></div>
+                                            <div class="col-3">
+                                                <select class="form-select">
+                                                    <option value="undefined">%</option>
+                                                    <option value="12" selected="">VND</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row" style="margin-bottom: 5px;">
+                                            <div class="col-3 justify-content-center align-items-center align-content-center align-self-center" style="text-align: right;">
+                                                <p style="margin-bottom: 0px;">Bảo hành</p>
+                                            </div>
+                                            <div class="col-6"><input class="form-control" type="number"></div>
+                                            <div class="col-3">
+                                                <select class="form-select">
+                                                    <option value="undefined">%</option>
+                                                    <option value="12" selected="">VND</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <div class="col-4 text-end">
+                                                <p>Tổng thanh toán</p>
+                                            </div>
+                                            <div class="col-8" style="font-weight: bold;">
+                                                <p>16.000.0000</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-4 text-end">
+                                                <p>Cọc trước</p>
+                                            </div>
+                                            <div class="col-8" style="font-weight: bold;">
+                                                <p>6.000.000</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-4 text-end">
+                                                <p>Giao hàng</p>
+                                            </div>
+                                            <div class="col-8" style="font-weight: bold;">
+                                                <p>9.000.000</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-4 text-end">
+                                                <p>Bảo hành</p>
+                                            </div>
+                                            <div class="col-8" style="font-weight: bold;">
+                                                <p>1.000.000</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="next-prev-buttons-1" class="button-row d-flex mt-4"><button class="btn btn btn-primary js-btn-prev" type="button" title="Prev" style="margin-right: 5px;">Quay lại</button><button class="btn btn btn-primary ml-auto js-btn-next" type="button" title="Next">Tiếp theo</button></div>
+                        </div>
+                    </div>
+                    <div id="single-form-next-prev-1" class="multisteps-form__panel shadow p-4 rounded bg-white" data-animation="scaleIn" style="box-shadow: 12px 12px 17px 12px rgb(215,79,79);">
+                        <h5 class="text-uppercase text-center multisteps-form__title" style="font-weight: bold;text-decoration:  underline;">Hoàn tất</h5>
+                        <div id="form-content-2" class="multisteps-form__content">
+                            <div class="row text-end justify-content-center">
+                                <div class="col-6" style="background: rgba(244,245,251,0.63);border-radius: 20px;box-shadow: 0px 0px;padding: 16px;">
+                                    <div class="row" style="padding-bottom: 0px;margin-bottom: 5px;">
+                                        <div class="col-4 text-end align-self-center">
+                                            <p style="margin-bottom: 0px;">Hiệu lực</p>
+                                        </div>
+                                        <div class="col-8"><input class="form-control" type="date"></div>
+                                    </div>
+                                    <div class="row" style="padding-bottom: 0px;margin-bottom: 5px;">
+                                        <div class="col-4 text-end align-self-center">
+                                            <p style="margin-bottom: 0px;">Ngày giao</p>
+                                        </div>
+                                        <div class="col-8"><input class="form-control" type="date"></div>
+                                    </div>
+                                    <div class="row" style="padding-bottom: 0px;margin-bottom: 5px;">
+                                        <div class="col-4 text-end align-self-center">
+                                            <p style="margin-bottom: 0px;">Loại</p>
+                                        </div>
+                                        <div class="col-8">
+                                            <select class="form-select">
+                                                <option value="undefined" selected="">Báo giá</option>
+                                                <option value="12">Đơn hàng</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row" style="padding-bottom: 0px;margin-bottom: 5px;">
+                                        <div class="col-4 text-end align-self-center"></div>
+                                        <div class="col-8"><a class="btn btn-primary" role="button" style="width: 100%;" href="order-report.html">In tài liệu</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="next-prev-buttons-1" class="button-row d-flex mt-4"><button class="btn btn btn-primary ml-auto js-btn-next" type="button" title="Next">Hoàn tất</button></div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="modal fade" role="dialog" tabindex="-1" id="modal-1">
+    <div class="modal-dialog modal-fullscreen" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Thêm hàng hóa</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="row" style="margin-bottom: 5px;">
+                                    <div class="col-4 text-end align-self-center">
+                                        <p style="margin-bottom: 0px;">Danh mục</p>
+                                    </div>
+                                    <div class="col-8">
+                                        <select class="form-select">
+                                            <option value="undefined" selected="">Chọn danh mục...</option>
+                                            <option value="13">This is item 2</option>
+                                            <option value="14">This is item 3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row" style="margin-bottom: 5px;">
+                                    <div class="col-4 text-end align-self-center">
+                                        <p style="margin-bottom: 0px;">Nhóm</p>
+                                    </div>
+                                    <div class="col-8">
+                                        <select class="form-select">
+                                            <option value="undefined" selected="">Chọn nhóm...</option>
+                                            <option value="13">This is item 2</option>
+                                            <option value="14">This is item 3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row" style="margin-bottom: 5px;">
+                                    <div class="col-4 text-end align-self-center">
+                                        <p style="margin-bottom: 0px;">Nhóm</p>
+                                    </div>
+                                    <div class="col-8"><input class="form-control" type="text" placeholder="Tên sản phẩm"></div>
+                                </div>
+                                <div class="row" style="margin-bottom: 5px;">
+                                    <div class="col-4 text-end align-self-center">
+                                        <p style="margin-bottom: 0px;">Vật liệu chính</p>
+                                    </div>
+                                    <div class="col-8">
+                                        <select class="form-select">
+                                            <option value="undefined" selected="">Chọn vật liệu...</option>
+                                            <option value="13">This is item 2</option>
+                                            <option value="14">This is item 3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row" style="margin-bottom: 5px;">
+                                    <div class="col-4 text-end align-self-center">
+                                        <p style="margin-bottom: 0px;">Màu sắc chính</p>
+                                    </div>
+                                    <div class="col-8">
+                                        <select class="form-select">
+                                            <option value="undefined" selected="">Chọn màu sắc...</option>
+                                            <option value="13">This is item 2</option>
+                                            <option value="14">This is item 3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row" style="margin-bottom: 5px;">
+                                    <div class="col-4 text-end align-self-center">
+                                        <p style="margin-bottom: 0px;">Đơn vị tính</p>
+                                    </div>
+                                    <div class="col-8">
+                                        <select class="form-select">
+                                            <option value="undefined" selected="">Chọn đơn vị tính...</option>
+                                            <option value="13">This is item 2</option>
+                                            <option value="14">This is item 3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row" style="margin-bottom: 5px;">
+                                    <div class="col-3 text-end align-self-center">
+                                        <p style="margin-bottom: 0px;">Kích thước</p>
+                                    </div>
+                                    <div class="col-3"><input class="form-control" type="number" placeholder="Rộng"></div>
+                                    <div class="col-3"><input class="form-control" type="number" placeholder="Sâu"></div>
+                                    <div class="col-3"><input class="form-control" type="number" placeholder="Cao"></div>
+                                </div>
+                                <div class="row" style="margin-bottom: 5px;">
+                                    <div class="col-3 text-end align-self-center">
+                                        <p style="margin-bottom: 0px;">Hình ảnh</p>
+                                    </div>
+                                    <div class="col-9">
+                                        <div class="row">
+                                            <div class="col" style="width: 96px;">
+                                                <div id="someId-1" class="rounded position-relative vPreviewImage" style="width: 96px;height: 96px;background: url('assets/img/input_image_preview/upload_image.png') center / cover no-repeat;" input-data-index="0"><button class="btn d-none close position-sticky vClearPreviewImage" type="button"><span class="bg-white pl-2 pr-2" aria-hidden="true">&times;</span></button><input class="form-control vInputImage" type="file" style="width: 96px;height: 96px;opacity: 0;cursor: pointer;" accept="image/*"></div>
+                                            </div>
+                                            <div class="col" style="width: 96px;">
+                                                <div id="someId-3" class="rounded position-relative vPreviewImage" style="width: 96px;height: 96px;background: url('assets/img/input_image_preview/upload_image.png') center / cover no-repeat;" input-data-index="0"><button class="btn d-none close position-sticky vClearPreviewImage" type="button"><span class="bg-white pl-2 pr-2" aria-hidden="true">&times;</span></button><input class="form-control vInputImage" type="file" style="width: 96px;height: 96px;opacity: 0;cursor: pointer;" accept="image/*"></div>
+                                            </div>
+                                            <div class="col" style="width: 96px;">
+                                                <div id="someId-2" class="rounded position-relative vPreviewImage" style="width: 96px;height: 96px;background: url('assets/img/input_image_preview/upload_image.png') center / cover no-repeat;" input-data-index="0"><button class="btn d-none close position-sticky vClearPreviewImage" type="button"><span class="bg-white pl-2 pr-2" aria-hidden="true">&times;</span></button><input class="form-control vInputImage" type="file" style="width: 96px;height: 96px;opacity: 0;cursor: pointer;" accept="image/*"></div>
+                                            </div>
+                                            <div class="col" style="width: 96px;">
+                                                <div id="someId-4" class="rounded position-relative vPreviewImage" style="width: 96px;height: 96px;background: url('assets/img/input_image_preview/upload_image.png') center / cover no-repeat;" input-data-index="0"><button class="btn d-none close position-sticky vClearPreviewImage" type="button"><span class="bg-white pl-2 pr-2" aria-hidden="true">&times;</span></button><input class="form-control vInputImage" type="file" style="width: 96px;height: 96px;opacity: 0;cursor: pointer;" accept="image/*"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="row" style="margin-bottom: 5px;">
+                                    <div class="col-4 text-end align-self-center">
+                                        <p style="margin-bottom: 0px;">Thành phần</p>
+                                    </div>
+                                    <div class="col-7">
+                                        <select class="form-select">
+                                            <option value="undefined" selected="">Chọn thành phần...</option>
+                                            <option value="13">This is item 2</option>
+                                            <option value="14">This is item 3</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-1 text-center align-self-center"><i class="fa fa-plus" style="font-size: 26px;"></i></div>
+                                </div>
+                                <div class="row" style="margin-bottom: 5px;">
+                                    <div class="col-4 text-end align-self-center">
+                                        <p style="margin-bottom: 0px;">Vật liệu</p>
+                                    </div>
+                                    <div class="col-8">
+                                        <select class="form-select">
+                                            <option value="undefined" selected="">Chọn vật liệu...</option>
+                                            <option value="13">This is item 2</option>
+                                            <option value="14">This is item 3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row" style="margin-bottom: 5px;">
+                                    <div class="col-4 text-end align-self-center">
+                                        <p style="margin-bottom: 0px;">Màu sắc</p>
+                                    </div>
+                                    <div class="col-8">
+                                        <select class="form-select">
+                                            <option value="undefined" selected="">Chọn màu sắc...</option>
+                                            <option value="13">This is item 2</option>
+                                            <option value="14">This is item 3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row" style="margin-bottom: 5px;">
+                                    <div class="col-3 text-end align-self-center">
+                                        <p style="margin-bottom: 0px;">Kích thước</p>
+                                    </div>
+                                    <div class="col-3"><input class="form-control" type="number" placeholder="Rộng"></div>
+                                    <div class="col-3"><input class="form-control" type="number" placeholder="Sâu"></div>
+                                    <div class="col-3"><input class="form-control" type="number" placeholder="Cao"></div>
+                                </div>
+                                <div class="row" style="margin-bottom: 5px;">
+                                    <div class="col-3 text-end align-self-center">
+                                        <p style="margin-bottom: 0px;">Hình ảnh</p>
+                                    </div>
+                                    <div class="col-9 text-center">
+                                        <div id="someId-1" class="rounded position-relative vPreviewImage" style="width: 96px;height: 96px;background: url('assets/img/input_image_preview/upload_image.png') center / cover no-repeat;" input-data-index="0"><button class="btn d-none close position-sticky vClearPreviewImage" type="button"><span class="bg-white pl-2 pr-2" aria-hidden="true">&times;</span></button><input class="form-control vInputImage" type="file" style="width: 96px;height: 96px;opacity: 0;cursor: pointer;" accept="image/*"></div>
+                                    </div>
+                                </div>
+                                <div class="row" style="margin-bottom: 5px;">
+                                    <div class="col text-center"><i class="fa fa-arrow-down" style="font-size: 32px;"></i></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col" style="background: rgba(245,245,245,0.72);border-radius: 8px;transform: translate(0px);transform-origin: center;transform-style: preserve-3d;margin-bottom: 0px;padding-bottom: 6px;padding-top: 6px;">
+                                        <h6 class="text-center" style="font-weight: bold;margin-top: 8px;">Thuộc tính tùy chỉnh</h6>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-2">
+                                        <picture><img class="img-fluid" src="assets/img/sofa0101.jpg"></picture>
+                                    </div>
+                                    <div class="col-auto align-self-center">
+                                        <h6 style="font-weight: bold;">Lưng sau:&nbsp;</h6>
+                                    </div>
+                                    <div class="col-auto align-self-center">
+                                        <p style="margin-bottom: 8px;">Simili màu DK09</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-2">
+                                        <picture><img class="img-fluid" src="assets/img/sofa0101.jpg"></picture>
+                                    </div>
+                                    <div class="col-auto align-self-center">
+                                        <h6 style="font-weight: bold;">Bọc gót chân:&nbsp;</h6>
+                                    </div>
+                                    <div class="col-auto align-self-center">
+                                        <p style="margin-bottom: 8px;">Đồng xước Cao 45mm</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer"><button class="btn btn-light" type="button" data-bs-dismiss="modal">Hủy</button><button class="btn btn-primary" type="button">Lưu</button></div>
+        </div>
+    </div>
+</div>
+        </div>
+<div class="modal fade" role="dialog" tabindex="-1" id="modal-2">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Thêm khách hàng</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-check"><input class="form-check-input" type="radio" id="formCheck-2" name="Add_TypeCustomer" value="0" checked=""><label class="form-check-label" for="formCheck-2">Cá nhân</label></div>
+                        </div>
+                        <div class="col">
+                            <div class="form-check"><input class="form-check-input" type="radio" id="formCheck-2" name="Add_TypeCustomer" value="1"><label class="form-check-label" for="formCheck-2">Doanh nghiệp</label></div>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-bottom: 5px;">
+                        <div class="col-4 text-end align-self-center">
+                            <p style="margin-bottom: 0px;">Mã số thuế</p>
+                        </div>
+                        <div class="col-8"><input class="form-control" type="number"></div>
+                    </div>
+                    <div class="row" style="margin-bottom: 5px;">
+                        <div class="col-4 text-end align-self-center">
+                            <p style="margin-bottom: 0px;">Số điện thoại</p>
+                        </div>
+                        <div class="col-8"><input class="form-control" type="number"></div>
+                    </div>
+                    <div class="row" style="margin-bottom: 5px;">
+                        <div class="col-4 text-end align-self-center">
+                            <p style="margin-bottom: 0px;">Tên đầy đủ</p>
+                        </div>
+                        <div class="col-8"><input class="form-control" type="text"></div>
+                    </div>
+                    <div class="row" style="margin-bottom: 5px;">
+                        <div class="col-4 text-end align-self-center">
+                            <p style="margin-bottom: 0px;">Sinh nhật&nbsp;</p>
+                        </div>
+                        <div class="col-8"><input class="form-control" type="date"></div>
+                    </div>
+                    <div class="row" style="margin-bottom: 5px;">
+                        <div class="col-4 text-end align-self-center">
+                            <p style="margin-bottom: 0px;">Địa chỉ</p>
+                        </div>
+                        <div class="col-8"><textarea class="form-control" rows="2"></textarea></div>
+                    </div>
+                    <div class="row" style="margin-bottom: 5px;">
+                        <div class="col-4 text-end align-self-center">
+                            <p style="margin-bottom: 0px;">Phường/Xã</p>
+                        </div>
+                        <div class="col-8">
+                            <select class="form-select">
+                                <option value="undefined" selected="">Chọn phường xã...</option>
+                                <option value="12">This is item 1</option>
+                                <option value="13">This is item 2</option>
+                                <option value="14">This is item 3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-bottom: 5px;">
+                        <div class="col-4 text-end align-self-center">
+                            <p style="margin-bottom: 0px;">Quận/Huyện</p>
+                        </div>
+                        <div class="col-8">
+                            <select class="form-select">
+                                <option value="undefined" selected="">Chọn quận huyện...</option>
+                                <option value="12">This is item 1</option>
+                                <option value="13">This is item 2</option>
+                                <option value="14">This is item 3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-bottom: 5px;">
+                        <div class="col-4 text-end align-self-center">
+                            <p style="margin-bottom: 0px;">Tỉnh/Thành phố</p>
+                        </div>
+                        <div class="col-8">
+                            <select class="form-select">
+                                <option value="undefined" selected="">Chọn tỉnh thành phố...</option>
+                                <option value="12">This is item 1</option>
+                                <option value="13">This is item 2</option>
+                                <option value="14">This is item 3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-bottom: 5px;">
+                        <div class="col-4 text-end align-self-center">
+                            <p style="margin-bottom: 0px;">Nguồn</p>
+                        </div>
+                        <div class="col-8">
+                            <select class="form-select">
+                                <option value="undefined" selected="">Chọn nguồn....</option>
+                                <option value="12">This is item 1</option>
+                                <option value="13">This is item 2</option>
+                                <option value="14">This is item 3</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer"><button class="btn btn-light" type="button" data-bs-dismiss="modal">Hủy</button><button class="btn btn-primary" type="button">Lưu</button></div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" role="dialog" tabindex="-1" id="modal-3">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h6 class="modal-title text-uppercase" style="font-weight: bold;">công ty tnhh ifurni</h6><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="row">
+                        <div class="col-4 text-end align-self-center">
+                            <p style="margin-bottom: 0px;">Tên liên hệ</p>
+                        </div>
+                        <div class="col-8" style="margin-bottom: 5px;"><input class="form-control" type="text"></div>
+                    </div>
+                    <div class="row" style="margin-bottom: 5px;">
+                        <div class="col-4 text-end align-self-center">
+                            <p style="margin-bottom: 0px;">Danh xưng</p>
+                        </div>
+                        <div class="col-auto">
+                            <div class="form-check"><input class="form-check-input" type="radio" id="formCheck-3" name="Add_ContactSex" value="mr" checked=""><label class="form-check-label" for="formCheck-3">Mr&nbsp;</label></div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="form-check"><input class="form-check-input" type="radio" id="formCheck-4" name="Add_ContactSex" value="ms"><label class="form-check-label" for="formCheck-3">Ms&nbsp;</label></div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="form-check"><input class="form-check-input" type="radio" id="formCheck-3" name="Add_ContactSex" value="mrs"><label class="form-check-label" for="formCheck-3">Mrs&nbsp;</label></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4 text-end align-self-center">
+                            <p style="margin-bottom: 0px;">Sinh nhật</p>
+                        </div>
+                        <div class="col-8" style="margin-bottom: 5px;"><input class="form-control" type="date"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4 text-end align-self-center">
+                            <p style="margin-bottom: 0px;">Chức vụ</p>
+                        </div>
+                        <div class="col-8" style="margin-bottom: 5px;"><input class="form-control" type="text"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4 text-end align-self-center">
+                            <p style="margin-bottom: 0px;">Phòng ban</p>
+                        </div>
+                        <div class="col-8" style="margin-bottom: 5px;"><input class="form-control" type="text"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4 text-end align-self-center">
+                            <p style="margin-bottom: 0px;">Số điện thoại</p>
+                        </div>
+                        <div class="col-8" style="margin-bottom: 5px;"><input class="form-control" type="text"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4 text-end align-self-center">
+                            <p style="margin-bottom: 0px;">Mail</p>
+                        </div>
+                        <div class="col-8" style="margin-bottom: 5px;"><input class="form-control" type="text"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4 text-end align-self-center">
+                            <p style="margin-bottom: 0px;">Địa chỉ</p>
+                        </div>
+                        <div class="col-8" style="margin-bottom: 5px;"><textarea class="form-control" rows="2"></textarea></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4 text-end align-self-center">
+                            <p style="margin-bottom: 0px;">Phường/Xã</p>
+                        </div>
+                        <div class="col-8" style="margin-bottom: 5px;">
+                            <select class="form-select">
+                                <option value="undefined" selected="">Chọn phường xã...</option>
+                                <option value="13">This is item 2</option>
+                                <option value="14">This is item 3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4 text-end align-self-center">
+                            <p style="margin-bottom: 0px;">Quận/Huyện</p>
+                        </div>
+                        <div class="col-8" style="margin-bottom: 5px;">
+                            <select class="form-select">
+                                <option value="undefined" selected="">Chọn quận huyện...</option>
+                                <option value="13">This is item 2</option>
+                                <option value="14">This is item 3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4 text-end align-self-center">
+                            <p style="margin-bottom: 0px;">Tỉnh/Thành phố</p>
+                        </div>
+                        <div class="col-8" style="margin-bottom: 5px;">
+                            <select class="form-select">
+                                <option value="undefined" selected="">Chọn tỉnh thành phố...</option>
+                                <option value="13">This is item 2</option>
+                                <option value="14">This is item 3</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer"><button class="btn btn-light" type="button" data-bs-dismiss="modal">Hủy</button><button class="btn btn-primary" type="button">Lưu</button></div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" role="dialog" tabindex="-1" id="modal-4">
+    <div class="modal-dialog modal-fullscreen" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h6 class="modal-title" style="font-weight: bold;">Đơn hàng: #Chưa khởi tạo</h6><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container-md d-block" style="width: 840px;max-width: 840px;min-width: 840px;">
+                    <div class="row">
+                        <div class="col-12">
+                            <picture><img height="40px" src="assets/img/dogs/logo.jpg"></picture>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <h5 class="text-uppercase text-center" style="font-weight: bold;margin-bottom: 0px;color: rgb(0,0,0);">bảng báo giá</h5>
+                        </div>
+                    </div>
+                    <div class="row" style="color: rgb(0,0,0);">
+                        <div class="col text-center" style="color: rgb(0,0,0);"><label class="col-form-label" style="padding-top: 0px;padding-bottom: 0px;font-size: 12px;color: rgb(0,0,0);">16/08/2021</label></div>
+                    </div>
+                    <div class="justify-content-center align-items-center align-content-center align-self-center" style="border: 2px none rgb(238,129,0);border-top-style: none;border-right-style: none;border-bottom-style: none;border-left-style: none;color: rgb(0,0,0);">
+                        <table class="table table-bordered">
+                            <tbody class="justify-content-center align-items-center align-content-center align-self-center" style="color: rgb(0,0,0);">
+                                <tr style="color: rgb(0,0,0);">
+                                    <td class="text-uppercase text-center justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);" colspan="2">Kính gửi:</td>
+                                    <td class="text-capitalize justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);" colspan="2">công ty tNHH an minh khang</td>
+                                    <td class="justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);" colspan="3">Tel: 0123456789</td>
+                                    <td class="justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);" colspan="2">Người nhận: Ms Hồng Ánh</td>
+                                </tr>
+                                <tr class="justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);">
+                                    <td class="text-uppercase text-center justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);" colspan="2">Địa điểm:</td>
+                                    <td class="justify-content-center align-items-center align-content-center align-self-center" colspan="5" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);">253/32 Xô Viết Nghệ Tỉnh, Phường Bình Hưng Hòa, Quận Bình Tân, Hồ Chí Minh</td>
+                                    <td class="justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);" colspan="2">Email: langtudatinh_0205@gmail.com</td>
+                                </tr>
+                                <tr class="justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);">
+                                    <td class="text-uppercase text-center justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);" colspan="2">Người gửi:</td>
+                                    <td class="justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);" colspan="2">Lê Hồng Hải</td>
+                                    <td class="justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);" colspan="3">Tel: 012345789</td>
+                                    <td class="justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);" colspan="2">Email: langtudatinh_0205@gmail.com<br></td>
+                                </tr>
+                                <tr class="justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);">
+                                    <td class="text-center justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);font-weight: bold;color: rgb(0,0,0);" colspan="9">Nội Thất IFURNI chân thành cảm ơn Quý Khách đã lựa chọn sản phẩm của IFURNI, Chúng tôi xin báo giá đến Quý <br>Khách hàng các mặt hàng như sau:<br></td>
+                                </tr>
+                                <tr class="justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);">
+                                    <td class="text-uppercase text-center justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);font-weight: bold;color: rgb(0,0,0);">STT</td>
+                                    <td class="text-uppercase text-center justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);font-weight: bold;color: rgb(0,0,0);">tên hàng</td>
+                                    <td class="text-uppercase text-center justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);font-weight: bold;color: rgb(0,0,0);">mô tả</td>
+                                    <td class="text-uppercase text-center justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);font-weight: bold;color: rgb(0,0,0);">hình ảnh</td>
+                                    <td class="text-uppercase text-center justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);font-weight: bold;color: rgb(0,0,0);">dvt</td>
+                                    <td class="text-uppercase text-center justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);font-weight: bold;color: rgb(0,0,0);">sl</td>
+                                    <td class="text-uppercase text-center justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);font-weight: bold;color: rgb(0,0,0);">đơn giá</td>
+                                    <td class="text-uppercase text-center justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);font-weight: bold;color: rgb(0,0,0);">thành tiền</td>
+                                    <td class="text-uppercase text-center justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);font-weight: bold;color: rgb(0,0,0);">ghi chú</td>
+                                </tr>
+                                <tr class="justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);">
+                                    <td class="text-center justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);">1</td>
+                                    <td class="text-center justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);">Ghế đệm ngoài trời</td>
+                                    <td class="text-center justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);">Khung chân gỗ ash, <br>nệm ngồi bọc da <br>công nghiệp công <br>nghệ Microfiber hoặc <br>vải màu tùy chọn<br></td>
+                                    <td class="text-center justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);padding-right: 3px;padding-left: 3px;color: rgb(0,0,0);">
+                                        <picture style="color: rgb(0,0,0);"><img style="width: 100px;color: rgb(0,0,0);" src="assets/img/sofa0101.jpg"></picture><br>
+                                    </td>
+                                    <td class="text-center justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);">Cái</td>
+                                    <td class="text-center justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);">4</td>
+                                    <td class="text-center justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);">2.590.000</td>
+                                    <td class="text-center justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);">12.580.000</td>
+                                    <td class="text-center justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);">Cần bản vẽ chi tiết</td>
+                                </tr>
+                                <tr class="justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);">
+                                    <td class="text-center justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);">1</td>
+                                    <td class="text-center justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);">Ghế đệm ngoài trời</td>
+                                    <td class="text-center justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);">Khung chân gỗ ash, <br>nệm ngồi bọc da <br>công nghiệp công <br>nghệ Microfiber hoặc <br>vải màu tùy chọn<br></td>
+                                    <td class="text-center justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);padding-right: 3px;padding-left: 3px;color: rgb(0,0,0);">
+                                        <picture style="color: rgb(0,0,0);"><img style="width: 100px;color: rgb(0,0,0);" src="assets/img/sofa0101.jpg"></picture><br>
+                                    </td>
+                                    <td class="text-center justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);">Cái</td>
+                                    <td class="text-center justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);">4</td>
+                                    <td class="text-center justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);">2.590.000</td>
+                                    <td class="text-center justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);">12.580.000</td>
+                                    <td class="text-center justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);">Cần bản vẽ chi tiết</td>
+                                </tr>
+                                <tr class="justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);">
+                                    <td class="text-center justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);">1</td>
+                                    <td class="text-center justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);">Ghế đệm ngoài trời</td>
+                                    <td class="text-center justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);">Khung chân gỗ ash, <br>nệm ngồi bọc da <br>công nghiệp công <br>nghệ Microfiber hoặc <br>vải màu tùy chọn<br></td>
+                                    <td class="text-center justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);padding-right: 3px;padding-left: 3px;color: rgb(0,0,0);">
+                                        <picture style="color: rgb(0,0,0);"><img style="width: 100px;color: rgb(0,0,0);" src="assets/img/sofa0101.jpg"></picture><br>
+                                    </td>
+                                    <td class="text-center justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);">Cái</td>
+                                    <td class="text-center justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);">4</td>
+                                    <td class="text-center justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);">2.590.000</td>
+                                    <td class="text-center justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);">12.580.000</td>
+                                    <td class="text-center justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);">Cần bản vẽ chi tiết</td>
+                                </tr>
+                                <tr class="justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);">
+                                    <td class="text-center justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);">1</td>
+                                    <td class="text-center justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);">Ghế đệm ngoài trời</td>
+                                    <td class="text-center justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);">Khung chân gỗ ash, <br>nệm ngồi bọc da <br>công nghiệp công <br>nghệ Microfiber hoặc <br>vải màu tùy chọn<br></td>
+                                    <td class="text-center justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);padding-right: 3px;padding-left: 3px;color: rgb(0,0,0);">
+                                        <picture style="color: rgb(0,0,0);"><img style="width: 100px;color: rgb(0,0,0);" src="assets/img/sofa0101.jpg"></picture><br>
+                                    </td>
+                                    <td class="text-center justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);">Cái</td>
+                                    <td class="text-center justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);">4</td>
+                                    <td class="text-center justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);">2.590.000</td>
+                                    <td class="text-center justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);">12.580.000</td>
+                                    <td class="text-center justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);">Cần bản vẽ chi tiết</td>
+                                </tr>
+                                <tr class="justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);">
+                                    <td class="text-center justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);">1</td>
+                                    <td class="text-center justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);">Ghế đệm ngoài trời</td>
+                                    <td class="text-center justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);">Khung chân gỗ ash, <br>nệm ngồi bọc da <br>công nghiệp công <br>nghệ Microfiber hoặc <br>vải màu tùy chọn<br></td>
+                                    <td class="text-center justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);padding-right: 3px;padding-left: 3px;color: rgb(0,0,0);">
+                                        <picture style="color: rgb(0,0,0);"><img style="width: 100px;color: rgb(0,0,0);" src="assets/img/sofa0101.jpg"></picture><br>
+                                    </td>
+                                    <td class="text-center justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);">Cái</td>
+                                    <td class="text-center justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);">4</td>
+                                    <td class="text-center justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);">2.590.000</td>
+                                    <td class="text-center justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);">12.580.000</td>
+                                    <td class="text-center justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);">Cần bản vẽ chi tiết</td>
+                                </tr>
+                                <tr class="justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);">
+                                    <td class="text-center justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);">1</td>
+                                    <td class="text-center justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);">Ghế đệm ngoài trời</td>
+                                    <td class="text-center justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);">Khung chân gỗ ash, <br>nệm ngồi bọc da <br>công nghiệp công <br>nghệ Microfiber hoặc <br>vải màu tùy chọn<br></td>
+                                    <td class="text-center justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);padding-right: 3px;padding-left: 3px;color: rgb(0,0,0);">
+                                        <picture style="color: rgb(0,0,0);"><img style="width: 100px;color: rgb(0,0,0);" src="assets/img/sofa0101.jpg"></picture><br>
+                                    </td>
+                                    <td class="text-center justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);">Cái</td>
+                                    <td class="text-center justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);">4</td>
+                                    <td class="text-center justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);">2.590.000</td>
+                                    <td class="text-center justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);">12.580.000</td>
+                                    <td class="text-center justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);">Cần bản vẽ chi tiết</td>
+                                </tr>
+                                <tr class="justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);">
+                                    <td class="text-end justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);padding-top: 4px;padding-bottom: 0px;color: rgb(0,0,0);" colspan="7">Thành tiền:</td>
+                                    <td class="text-end justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);" colspan="2">124.560.000</td>
+                                </tr>
+                                <tr class="justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);">
+                                    <td class="text-end justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);" colspan="7">VAT:</td>
+                                    <td class="text-end justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);" colspan="2">12.456.000</td>
+                                </tr>
+                                <tr class="justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);">
+                                    <td class="text-end justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);" colspan="7">Chiếc khấu:</td>
+                                    <td class="text-end justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);" colspan="2">0</td>
+                                </tr>
+                                <tr class="justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);">
+                                    <td class="text-end justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);" colspan="7">Thành tiền:</td>
+                                    <td class="text-end justify-content-center align-items-center align-content-center align-self-center" style="font-size: 14px;border: 1px solid rgb(255,67,8);border-left-color: rgb(255,74,17);font-weight: bold;padding-top: 4px;padding-bottom: 0px;color: rgb(0,0,0);" colspan="2">124.560.000</td>
+                                </tr>
+                                <tr class="justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px none rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);">
+                                    <td class="text-start justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px none rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);" colspan="6"></td>
+                                    <td class="text-start justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px none rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);" colspan="3"></td>
+                                </tr>
+                                <tr class="justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;border: 1px none rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);">
+                                    <td class="text-start justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;padding-top: 0px;padding-bottom: 0px;font-weight: bold;text-decoration: underline;border: 1px none rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);" colspan="6">Ghi chú:</td>
+                                    <td class="text-uppercase text-center justify-content-center align-items-center align-content-center align-self-center" style="font-size: 13px;padding-top: 0px;padding-bottom: 0px;font-weight: bold;border: 1px none rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);" colspan="3">công ty tnhh ifurni</td>
+                                </tr>
+                                <tr class="justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;padding-top: 0px;padding-bottom: 0px;border: 1px none rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);">
+                                    <td class="text-start justify-content-center align-items-center align-content-center align-self-center" style="font-size: 11px;padding-top: 0px;padding-bottom: 0px;font-style: italic;border: 1px none rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);" colspan="6">- Đặt cọc 50% giá trị đơn hàng, Thanh toán phần còn lại ngay khi giao hàng.<br></td>
+                                    <td class="text-start justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;padding-top: 0px;padding-bottom: 0px;border: 1px none rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);" colspan="3"></td>
+                                </tr>
+                                <tr class="justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;padding-top: 0px;padding-bottom: 0px;border: 1px none rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);">
+                                    <td class="text-start justify-content-center align-items-center align-content-center align-self-center" style="font-size: 11px;padding-top: 0px;padding-bottom: 0px;font-style: italic;border: 1px none rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);" colspan="6">- Thời gian đặt hàng từ 7-10 ngày kể từ ngày đặt cọc.<br></td>
+                                    <td class="text-start justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;padding-top: 0px;padding-bottom: 0px;border: 1px none rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);" colspan="3"></td>
+                                </tr>
+                                <tr class="justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;padding-top: 0px;padding-bottom: 0px;border: 1px none rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);">
+                                    <td class="text-start justify-content-center align-items-center align-content-center align-self-center" style="font-size: 11px;padding-top: 0px;padding-bottom: 0px;font-style: italic;border: 1px none rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);" colspan="6">- Báo giá có hiệu lực trong 30 ngày.<br></td>
+                                    <td class="text-start justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;padding-top: 0px;padding-bottom: 0px;border: 1px none rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);" colspan="3"></td>
+                                </tr>
+                                <tr class="justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;padding-top: 0px;padding-bottom: 0px;border: 1px none rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);">
+                                    <td class="text-start justify-content-center align-items-center align-content-center align-self-center" style="font-size: 11px;padding-top: 0px;padding-bottom: 0px;font-style: italic;border: 1px none rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);" colspan="6">- STK Không VAT 0371000413850 Lưu Thị Hằng, Ngân hàng Vietcombank<br></td>
+                                    <td class="text-start justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;padding-top: 0px;padding-bottom: 0px;border: 1px none rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);" colspan="3"></td>
+                                </tr>
+                                <tr class="justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;padding-top: 0px;padding-bottom: 0px;border: 1px none rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);">
+                                    <td class="text-start justify-content-center align-items-center align-content-center align-self-center" style="font-size: 11px;padding-top: 0px;padding-bottom: 0px;font-style: italic;border: 1px none rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);" colspan="6">- STK có VAT 148385649 CTY TNHH IFURNI - Ngân hàng ACB<br></td>
+                                    <td class="text-start justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;padding-top: 0px;padding-bottom: 0px;border: 1px none rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);" colspan="3"></td>
+                                </tr>
+                                <tr class="justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;padding-top: 0px;padding-bottom: 0px;border: 1px none rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);">
+                                    <td class="text-start justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;padding-top: 0px;padding-bottom: 0px;border: 1px none rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);" colspan="6"></td>
+                                    <td class="text-capitalize text-center justify-content-center align-items-center align-content-center align-self-center" style="font-size: 12px;padding-top: 0px;padding-bottom: 0px;font-weight: bold;border: 1px none rgb(255,67,8);border-left-color: rgb(255,74,17);color: rgb(0,0,0);" colspan="3">lê hồng hải</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer"><button class="btn btn-light" type="button" data-bs-dismiss="modal">Hủy</button><button class="btn btn-primary" type="button">In</button></div>
+        </div>
+    </div>
+</div>
+
